@@ -1,0 +1,1157 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Airbnb BD';
+    src: url('fonts/AirbnbCereal_W_Bd.otf');
+}
+
+@font-face {
+    font-family: 'Airbnb LT';
+    src: url('fonts/AirbnbCereal_W_Lt.otf');
+}
+
+* {
+    margin: 0;
+}    
+    
+.header-index {
+    background-image: url('images/img-acceuil.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.header-experiences {
+    background-image: url('images/img-expériences.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-top img{
+    width: 4vw;
+    height: 4vw;
+}
+
+#header-icons {
+    font-size: 35px;
+    padding: 40px 30px 0 30px;
+    color: #fff;
+}
+
+
+.header-middle {
+    padding-top: 150px;
+    text-align: center;
+    text-shadow: 1px 1px 2px black; 
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 4.5em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 2em;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+    .header-middle h1 {
+        font-size: 4.5em;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+
+    .header-middle p {
+        font-size: 2em;
+        color: #ffffff;
+        margin-bottom: 30px;
+    }
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 900px;
+    margin: auto;
+}
+
+.navbar-item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+    
+.navbar-item label {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 4px;
+}
+    
+.navbar-item input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #333;
+}
+    
+.search-button {
+    background-color: #ff385c;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    width: 65px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;    
+}
+
+.search-button i {
+    font-size: 16px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+}
+    
+.dropdown-menus {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    background-color: white;
+    width: fit-content;
+    margin: 50px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+}
+
+.menu-categories {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-item a {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    color: #666;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item a:hover {
+    background-color: #FF4545;
+    color: #fff;
+}
+
+.menu-item a i {
+    margin-right: 0.5rem;
+}
+
+.submenu {
+    list-style-type: none;
+    background-color: #e7e7e7;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    padding: 0.5rem 0;
+    border-radius: 8px;
+    min-width: 150px;
+}
+
+.submenu li {
+    padding: 0.5rem 1rem;
+}
+
+.submenu li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+    padding: 0.3rem 0;
+}
+
+.submenu li a:hover {
+    background-color: #FF4545;
+}
+
+.menu-item:hover .submenu {
+    display: block;
+}
+
+
+    .search-button i {
+        font-size: 16px;
+    }
+    
+    #suggest{
+        margin-left: 1vw;
+
+    }
+
+    .main {
+        background-color: #ff4545;
+        height: 100vh;
+        z-index: 1;
+        margin-top: -5vw;
+        border-top-left-radius: 5vw;
+        border-top-right-radius: 5vw;
+    }
+
+    .main-experiences {
+        background-color: #0CCE6B;
+        height: 100vh;
+        z-index: 1;
+        margin-top: -5vw;
+        border-top-left-radius: 5vw;
+        border-top-right-radius: 5vw;
+    }
+
+
+    .main .content{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .main-experiences .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .main .content .prev, .main .content .next {
+        font-size: 2.5vw;
+    }
+
+    .main-experiences .content .prev, .main .content .next {
+        font-size: 2.5vw;
+    }
+
+    .main .content .text{
+        width: 50%;
+    }
+
+    .main-experiences .content .text{
+        width: 50%;
+    }
+
+    .main .content .text h1{
+        font-family: 'Airbnb BD';
+        font-size: 4vw;
+        width: 70%;
+        color: white;
+    }
+
+    .main-experiences .content .text h1{
+        font-family: 'Airbnb BD';
+        font-size: 4vw;
+        width: 70%;
+        color: white;
+    }
+
+    .main .content .text p{
+        width: 60%;
+        color: white;
+        font-size: 1vw;
+        font-family: 'Airbnb BD';
+        margin-top: 2vw;
+    }
+
+
+/* ---------------------------- LOUER SON LOGEMENT --------------------- */
+
+    .header-louer{
+        background-image: url('images/bg-louer.png');
+        background-size: cover;
+        background-position: center;
+        height: 50vw;
+    }
+
+    .louer-main-content{
+        background: #F9CB40;
+        margin-top: -3vw;
+        border-top-left-radius: 3vw;
+        border-top-right-radius: 3vw;
+        height: 230vw;
+    }
+
+    .louer-main-content .head-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .louer-main-content .head-content .left-content{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .louer-main-content .head-content .left-content h1{
+        font-size: 5vw;
+    }
+
+    .louer-main-content .head-content .left-content p{
+        font-size: 2vw;
+    }
+
+    .louer-main-content .head-content .right-content img{
+        width: 30vw;
+    }
+
+    .louer-main-content .low-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-top: solid white 1vw;
+        padding-top: 2vw;
+    }
+
+    .louer-main-content .low-content .airbnb-starter {
+        width: 80%;
+        height: 30vw;
+        background-image: url('images/airbnbstart.png');
+        background-position: center;
+        background-size: cover;
+    }
+
+    .louer-main-content .low-content .airbnb-starter-text {
+        background-color: white;
+        width: 80%;
+        margin-top: -8vw;
+        border-radius: 2vw;
+        border: solid black 0.1vw;
+        height: auto;
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 1vw;
+        padding-top: 1vw;
+    }
+
+    .louer-main-content .low-content .airbnb-starter-text div{
+        width: 27%;
+    }
+
+    .louer-main-content .low-content .airbnb-starter-text div p{
+        color: black;
+        font-size: 1vw;
+        margin-top: 1vw;
+        text-align: justify;
+    }
+
+    .louer-main-content .low-content img{
+        margin-top: 5vw;
+        width: 20vw;
+    }
+
+    .louer-main-content .low-content .aircover {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 80%;
+        height: 60vw;
+        gap: 2vw;
+    }
+
+    .louer-main-content .low-content .aircover .text{
+        background: white;
+        border-radius: 2vw;
+        height: auto;
+        width: 35vw;
+    }
+
+    .louer-main-content .low-content .aircover .text p{
+        color: black;
+        font-size: 1.2vw;
+        margin: 1vw;
+        text-align: justify;
+    }
+
+    .louer-main-content .low-content .aircover .text h2{
+        margin: 1vw;
+    }
+
+    .louer-main-content .foot-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5vw;
+        margin-top: 5vw;
+    }
+
+    .louer-main-content .foot-content div:first-child, .louer-main-content .foot-content div:last-child{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 30vw;
+    }
+
+    .louer-main-content .foot-content div:first-child h1{
+        font-size: 4vw;
+    }
+
+    .louer-main-content .foot-content div:last-child img{
+        width: 30vw;
+    }
+
+    .louer-main-content .foot-content div:first-child button{
+        background-color: #FF4545;
+        border: none;
+        font-size: 1.2vw;
+        padding: 1vw;
+        border-radius: 3vw;
+        color: white;
+    }
+
+    .main-experiences .content .text p{
+        width: 60%;
+        color: white;
+        font-size: 1vw;
+        font-family: 'Airbnb BD';
+        margin-top: 2vw;
+    }
+    
+/* ---------------------------- LOCATIONS ------------------------------ */
+
+    .header-loc{
+        background-image: url('images/bg-locations.png');
+        background-size: cover;
+        background-position: center;
+        height: 100vh
+    }
+
+    .loc-main-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .loc-main-content .head-content{
+        background-color: #3982d6;
+        height: 65vw;
+    }
+
+    .loc-main-content .head-content img{
+        width: 60vw;
+    }
+
+    .head-content{
+        width: 100%;
+        height: 120vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -5vw;
+        border-top-right-radius: 3vw;
+        border-top-left-radius: 3vw;
+    }
+
+    .head-content h2{
+        margin-top: 5vw;
+        font-size: 4vw;
+        color: white;
+        font-family: 'Airbnb BD';
+        margin-bottom: 2vw;
+    }
+
+    .head-content p{
+        font-family: 'Airbnb BD';
+        margin-top: 5vw;
+        font-size: 2vw;
+    }
+
+    .loc-content{
+        background: #3982d6;
+        height: 150vh;
+        width: 100%;
+        margin-top: 2vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .loc-content h2{
+        color: white;
+        font-size: 4vw;
+        font-family: 'Airbnb BD';
+        margin-top: 2vw;
+    }
+
+    iframe{
+        top: 2vw;
+        width: 70%;
+        height: 100vh;
+        border-radius: 3vw;
+        position: sticky;
+    }
+
+
+    .loc-content .results .map {
+        height: 60vw;
+        width: 30%;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 2vw;
+    }
+
+    .loc-content .results .loc-results{
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5vw;
+        height: 120vh;
+    }
+
+    .loc-content .results .loc-results .result-content{
+        background-color: #222E50;
+        height: 25vw;
+        width: 30%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 3vw;
+        position: relative;
+        transition: 0.3s ease-in-out;
+    }
+
+    .result-content img{
+        width: 90%;
+        height: 60%;
+        margin-top: 1vw;
+    }
+
+    .loc-content .results{
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        width: 100%;
+        margin-top: 5vw;
+    }
+
+    .loc-content .results .loc-results .img-bg{
+        position: absolute;
+        top: 1vw;
+        left: 1vw;
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 85%;
+        gap: 2vw;
+    }
+
+    .loc-content .results .loc-results .img-bg img{
+        width: 2vw;
+    }
+
+    .loc-content .results .loc-results .img-bg p{
+        font-size: 1vw;
+        margin-top: 0.5vw;
+        margin-left: 0.8vw;
+        background-color: #222E50;
+        width: 70%;
+        text-align: center;
+        border-radius: 50vw;
+        font-family: 'Airbnb LT';
+    }
+
+    .loc-content .results .loc-results .result-content .text-content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5vw;
+    }
+
+    .loc-content .results .loc-results .result-content .text-content-2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+
+    .loc-content .results .loc-results .result-content .text-content p, .others .text-content p{
+        font-size: 1.3vw;
+        width: auto;
+    }
+
+    .loc-content .results .loc-results .result-content .text-content-2 p, .others .text-content-2 p{
+        font-size: 1.3vw;
+        width: 100%;
+    }
+
+    .loc-content .results .loc-results .result-content .text-content-2 img, .others .text-content-2 img{
+        width: 2vw;
+        margin: 0;
+    }
+
+    .loc-content .results .loc-results .result-content #desc, .others #desc{
+        font-size: 1vw;
+        width: 88%;
+        margin-top: -1vw;
+    }
+    .loc-content .results .loc-results .result-content #desc2, .others #desc2{
+        font-size: 0.8vw;
+        width: 88%;
+        margin-top: -1vw;
+    }
+
+    .others {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 2vw;
+    }
+
+    .others h2 {
+        margin-left: 3vw;
+        margin-bottom: 2vw;
+        font-size: 2vw;
+        font-family: 'Airbnb BD';
+    }
+
+    .others .content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .others .result-content{
+        background-color: #222E50;
+        height: 25vw;
+        width: 20%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 3vw;
+        position: relative;
+        transition: 0.3s ease-in-out;
+    }
+
+    .others .img-bg{
+        position: absolute;
+        top: 1vw;
+        left: 1vw;
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 85%;
+        gap: 2vw;
+    }
+
+    .others .img-bg img{
+        width: 2vw;
+    }
+
+    .others .img-bg p{
+        font-size: 1vw;
+        margin-top: 0.5vw;
+        margin-left: 1.2vw;
+        background-color: #222E50;
+        width: 50%;
+        text-align: center;
+        border-radius: 50vw;
+        font-family: 'Airbnb LT';
+    }
+
+    .others .text-content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5vw;
+    }
+
+    .others .text-content-2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+
+    .result-content:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+/* ------------------------------- CAROUSSELS -----------------------------  */
+    .carousel {
+        position: relative;
+        max-width: 600px;
+        overflow: hidden;
+        height: auto;
+        border-radius: 1vw;
+        width: 22vw;
+    }
+
+    .carousel button{
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .content-caroussel{
+        display: flex;
+        flex-direction: column;
+        margin: 1vw;
+    }
+    
+    .carousel-inner {
+        display: flex;
+        transition: transform 0.5s ease;
+        width: 100%;
+    }
+    
+    .carousel-item {
+        min-width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .carousel img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .indicators {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .indicator {
+        width: 12px;
+        height: 12px;
+        background-color: #bbb;
+        border-radius: 50%;
+        border: solid black 0.1vw;
+        margin: 0 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .indicator.active {
+        background-color: white;
+    }
+    
+    .prev, .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 1;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        width: 10vw;
+    }
+    
+    .prev { left: 10px; }
+    .next { right: 10px; }
+    
+    .carousel:hover .prev,
+    .carousel:hover .next {
+        opacity: 1;
+    }
+    
+
+    .video-exp {
+        position: relative;
+        max-width: 600px;
+        overflow: hidden;
+        height: auto;
+        border-radius: 1vw;
+        width: 22vw;
+        height: 30vw;
+    }
+
+    .video-exp video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: auto;
+        height: 100%;
+        min-width: 100%;
+        min-height: 100%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .first-exp-container{
+        display: flex;
+        justify-content: center;
+        background-color: #0CCE6B;
+        padding-bottom: 200px;
+    }
+
+    .experiences-container {
+        background-color: #fff;
+        padding: 2rem;
+        border-radius: 15px;
+        max-width: 1200px;
+        width: 90%;
+        text-align: center;
+        padding: 30px 100px 100px 100px;
+    }
+    
+    .exp-title {
+        font-family: 'Airbnb BD';
+        color: #333;
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+        padding: 30px;
+    }
+    
+    .experience-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 7rem;
+    }
+    
+    .experience-card {
+        background-color: #f9f9f9;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: left;
+    }
+    
+    .experience-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    .info {
+        padding: 1rem;
+    }
+    
+    .info p {
+        color: #666;
+        font-size: 0.9rem;
+        font-family: 'Airbnb BD';
+    }
+    
+    .info h2 {
+        font-size: 1.1rem;
+        margin: 0.5rem 0;
+        font-weight: bold;
+        color: #333;
+        font-family: 'Airbnb BD';
+    }
+    
+    .price {
+        color: #333;
+        font-weight: bold;
+        font-family: 'Airbnb BD';
+    }
+    
+    .fa-star {
+        color: #FFC107;
+        margin-right: 0.2rem;
+    }
+    
+
+    footer{
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        height: 60vh;
+    }
+
+    footer .head{
+        margin-top: 3vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    footer .head div:first-child, footer .head div:nth-child(2), footer .head div:last-child{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: 40vh;
+        align-items: center;
+    }
+
+    footer h2 {
+        text-align: center;
+        font-size: 1.5vw;
+        top: 0;
+    }
+
+    footer .head div:first-child a, footer .head div:nth-child(2) a, footer .head div:last-child a{
+        color: white;
+        text-decoration: none;
+        margin-top: 1vw;
+        text-align: center;
+        width: 50%;
+    }
+
+    footer .head h2{
+        color: white;
+    }
+
+    footer .foot {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    footer .foot p{
+        color: white;
+        margin-bottom: 1vw;
+        text-align: center;
+        font-size: 1vw;
+    }
+
+    footer .foot div:first-child, footer .foot div:nth-child(2){
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+    }
+
+    footer .foot div:last-child{
+        display: flex;
+        column-gap: 3vw;
+        width: 30%;
+        justify-content: center;
+    }
+
+    footer .foot div:first-child a, footer .foot div:nth-child(2) a{
+        color: white;
+        text-decoration: none;
+        margin-bottom: 1vw;
+        text-align: center;
+    }
+
+
+    @media screen and (max-width: 1080px){
+        .main .content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main .content div:last-child{
+            width: 50%;
+        }
+
+        .main .content .text h1{
+            font-size: 5vw;
+        }
+
+        .main .content .text p{
+            font-size: 2vw;
+        }
+
+        .loc-content .results .loc-results .result-content {
+            width: 30vw;
+            height: 35vw;
+        }
+
+        .others .result-content {
+            width: 25vw;
+            height: 30vw;
+        }
+
+        .others .content {
+            flex-wrap: wrap;
+            row-gap: 2vw;
+        }
+
+        .loc-content .results .loc-results .img-bg p {
+            font-size: 1.2vw;
+            width: 10vw;
+            margin-left: 2vw;
+        }
+
+        .loc-content .results .loc-results .result-content .text-content p{
+            font-size: 2vw;
+        }
+
+        .others .text-content p {
+            font-size: 1.8vw;
+        }
+
+        footer {
+            height: auto;
+        }
+
+        footer .head, footer .foot{
+            display: flex;
+            flex-direction: column;
+        }
+
+        footer .head h2{
+            font-size: 2.5vw;
+        }
+
+        footer .head div:nth-child(2) {
+            height: 60vh;
+        }
+
+        footer .head div:first-child a, footer .head div:nth-child(2) a, footer .head div:last-child a,  
+        footer .foot div:first-child a, footer .foot div:nth-child(2) a, footer .foot div:last-child a, footer .foot div:first-child p{
+            font-size: 2vw;
+        }
+    }
+    
+
+
+@media screen and (max-width: 760px){
+    .main .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main .content div:last-child{
+        width: 30%;
+    }
+
+    .main .content .text h1{
+        font-size: 3.5vw;
+    }
+
+    .main .content .text p{
+        font-size: 1.5vw;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    footer .head, footer .foot{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .head h2{
+        font-size: 2vw;
+    }
+
+    footer .head div:nth-child(2) {
+        height: 60vh;
+    }
+
+    footer .head div:first-child a, footer .head div:nth-child(2) a, footer .head div:last-child a,  
+    footer .foot div:first-child a, footer .foot div:nth-child(2) a, footer .foot div:last-child a, footer .foot div:first-child p{
+        font-size: 1.5vw;
+    }
+}
+
+    @media only screen and (max-width: 960px){
+        .header-middle{
+            font-size: small;
+        }
+
+        .dropdown-menus {
+            width: 30vw;
+            padding-right: 50px;
+        }
+        
+        .menu-categories {
+            flex-direction: column;
+            width: 20vw;
+            gap: 0;
+        }
+        
+        .menu-item {
+            position: relative;
+        }
+        
+        .menu-item a:hover {
+            width: 20vw;
+        }
+        
+        .submenu {
+            min-width: 50px;
+        }
+
+        .navbar {
+            display: grid;
+            justify-content: center;
+            width: 80vw;
+        }
+        
+        .navbar-item {
+            display: flex;
+            flex-direction: column;
+            margin: 0 20px;
+            padding: 10px;
+        }
+            
+        .navbar-item label {
+            padding-left: 40px;
+        }
+            
+        .navbar-item input {
+            padding-left: 40px;
+        }
+            
+        .search-button {
+            margin-left: 100px;
+        }
+    }

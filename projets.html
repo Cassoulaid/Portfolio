@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets | Axel Delcroix</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">AD</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="projets.html" class="active">Projets</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Mes Projets</h1>
+            <p>Découvrez mes réalisations en développement web</p>
+        </div>
+    </section>
+
+    <section class="projects">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="javascript">JavaScript</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Projet 1 -->
+                <div class="project-card" data-category="javascript">
+                    <div class="project-img">
+                        <img src="images/photo projet pong.png" alt="Projet Pong">
+                    </div>
+                    <div class="project-info">
+                        <h3>Jeu de pong</h3>
+                        <p>Création d'un jeu de pong en JavaScript</p>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="projects_pages/pong_project.html" class="project-link">Voir le projet <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Projet 2 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-img">
+                        <img src="images/photo2 SFR.png" alt="projet SFR">
+                    </div>
+                    <div class="project-info">
+                        <h3>Le projet SFR</h3>
+                        <p>Refonte du site web SFR avec WordPress</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>PHP</span>
+                            <span>WordPress</span>
+                        </div>
+                        <a href="projects_pages/projet_sfr.html" class="project-link">Voir le projet <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Projet 3 -->
+                <div class="project-card" data-category="design">
+                    <div class="project-img">
+                        <img src="images/Flyer_Axel_Delcroix.jpg" alt="projet HellFire Fest">
+                    </div>
+                    <div class="project-info">
+                        <h3>Projet HellFire Fest</h3>
+                        <p>Designs sur un festival de métal fictif</p>
+                        <div class="project-tags">
+                            <span>Illustrator</span>
+                            <span>PhotoShop</span>
+                            <span>Figma</span>
+                        </div>
+                        <a href="projects_pages/HellFireFest_project.html" class="project-link">Voir le projet <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Projet 4 -->
+                <div class="project-card" data-category="javascript web">
+                    <div class="project-img">
+                        <img src="images/projet partiel 1.png" alt="Projet AirBnB">
+                    </div>
+                    <div class="project-info">
+                        <h3>Projet AirBnB des partielles</h3>
+                        <p>Refonte intégrale su site web AirBnB</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="projects_pages/AirBnB_project.html" class="project-link">Voir le projet <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Projet 5 -->
+                <div class="project-card" data-category="javascript web">
+                    <div class="project-img">
+                        <img src="images/projet chatbot.png" alt="projet ChatBot">
+                    </div>
+                    <div class="project-info">
+                        <h3>Projet ChatBot</h3>
+                        <p>Création d'un ChatBot avec une API gratuite</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>API</span>
+                        </div>
+                        <a href="projects_pages/chatbot_project.html" class="project-link">Voir le projet <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Vous avez un projet en tête ?</h2>
+            <p>N'hésitez pas à me contacter pour discuter de vos besoins en développement web</p>
+            <a href="contact.html" class="btn primary">Me contacter</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">AD</div>
+                <div class="footer-links">
+                    <a href="index.html">Accueil</a>
+                    <a href="projets.html">Projets</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/axel-delcroix/" class="social-icon" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Cassoulaid" class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/axel_delcroix/" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Axel Delcroix. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

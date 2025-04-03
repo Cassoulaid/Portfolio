@@ -1,0 +1,70 @@
+:root {
+    --color1: #2f8ca3;
+    --color2: #f4af2d;
+    --color-bg: #193f4a;
+    --color-border: #030504;
+    --color-ball: #cc3086;
+}
+
+body {
+    margin: 0px;
+    padding: 50px;
+    background-color: var(--color-border);
+    color: var(--color-ball);
+    overflow: hidden;
+}
+
+#cadre {
+    border: 5px solid var(--color-border); 
+    background-color: var(--color-bg);
+    height: 600px;
+    box-shadow: inset 0px 0px 20px 10px black;
+}
+
+.raquette {
+    position: absolute;
+    height: 100px;
+    width: 10px;
+    border-radius: 5px;
+}
+
+#j1 {
+    left: 60px;
+    background-color: var(--color1);
+    box-shadow: 0px 0px 20px 2px var(--color1);
+}
+
+#j2 {
+    right: 60px;
+    background-color: var(--color2);
+    box-shadow: 0px 0px 20px 2px var(--color2);
+}
+
+
+#ball {
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-ball);
+    box-shadow: 0px 0px 20px 0px var(--color-ball);
+    border-radius: 20px;
+    position: absolute;
+    /*left et top défini dans js;*/
+}
+
+#infos {
+    font-size: 2em;
+    text-align: center;  
+    text-shadow: 3px 6px 9px var(--color-ball);
+}
+
+#whowon {
+    font-size: 2em;
+    text-align: center;  
+    text-shadow: 3px 6px 9px var(--color-ball);
+}
+
+#score {
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 3px 6px 9px var(--color-ball);
+}
