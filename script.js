@@ -11,7 +11,6 @@ if (hamburger) {
 
 // Animation au scroll
 document.addEventListener("DOMContentLoaded", () => {
-    // Ajouter une classe visible aux éléments lorsqu'ils entrent dans la vue
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -20,7 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }, { threshold: 0.2 });
 
-    // Sélectionner tous les éléments à animer
     const sections = document.querySelectorAll("section");
     sections.forEach(section => {
         observer.observe(section);
@@ -34,13 +32,10 @@ const projectCards = document.querySelectorAll('.project-card');
 if (filterButtons.length > 0) {
     filterButtons.forEach(button => {
         button.addEventListener('click', () => {
-            // Enlever la classe active de tous les boutons
             filterButtons.forEach(btn => btn.classList.remove('active'));
             
-            // Ajouter la classe active au bouton cliqué
             button.classList.add('active');
             
-            // Filtrer les projets
             const filter = button.getAttribute('data-filter');
             
             projectCards.forEach(card => {
@@ -71,15 +66,12 @@ if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
         
-        // Récupérer les valeurs du formulaire
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
         const subject = document.getElementById('subject').value;
         const message = document.getElementById('message').value;
         
-        // Vérification simple des champs
         if (name && email && subject && message) {
-            // Simulation d'envoi de message (à remplacer par une vraie API)
             setTimeout(() => {
                 alert('Merci pour votre message ! Je vous répondrai dans les plus brefs délais.');
                 contactForm.reset();
@@ -106,7 +98,6 @@ if (document.querySelector('.hero-content')) {
         }, speed);
     };
     
-    // Animation du titre après chargement de la page
     window.addEventListener('load', () => {
         const heroTitle = document.querySelector('.hero h1');
         if (heroTitle) {
@@ -124,7 +115,7 @@ if (skillCards.length > 0) {
     });
 }
 
-// Smooth scroll pour les ancres
+// Scroll léger pour les ancres
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
