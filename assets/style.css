@@ -22,6 +22,7 @@ body {
     color: var(--text-color);
     background-image: url(../images/minimalist-blue-white-wave-background.jpg);
     background-size: cover;
+    background-position: center center;
     background-attachment: fixed;
 }
 
@@ -869,9 +870,22 @@ footer {
     .education-year {
         margin-bottom: 15px;
     }
+
+    .project-overview {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media (max-width: 768px) {
+
+    .hero {
+        height: 70vh;
+    }
+
     .hamburger {
         display: block;
     }
@@ -922,6 +936,19 @@ footer {
     .section-title {
         font-size: 1.8rem;
     }
+
+    .project-overview,
+    .project-description {
+        padding: 25px;
+    }
+    
+    .project-links {
+        flex-direction: column;
+    }
+    
+    .tech-breakdown {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 576px) {
@@ -949,35 +976,7 @@ footer {
     .contact-form {
         padding: 20px;
     }
-}
 
-/* Responsive Styles pages Projets */
-@media (max-width: 992px) {
-    .project-overview {
-        grid-template-columns: 1fr;
-    }
-    
-    .project-gallery {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (max-width: 768px) {
-    .project-overview,
-    .project-description {
-        padding: 25px;
-    }
-    
-    .project-links {
-        flex-direction: column;
-    }
-    
-    .tech-breakdown {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 576px) {
     .project-gallery {
         grid-template-columns: 1fr;
     }
