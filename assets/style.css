@@ -1,11 +1,12 @@
 :root {
-    --primary-color: #5661f4;
-    --secondary-color: #42b883;
-    --background-color: #f9fafb;
-    --text-color: #333;
+    --primary-color: #F5CB5C;
+    --secondary-color: #CFDBD5;
+    --header: #242423;
+    --background-color: #333533;
+    --text-color: #fff;
     --light-gray: #f3f4f6;
-    --dark-gray: #4b5563;
-    --border-color: #e5e7eb;
+    --dark-gray: #9da3a0;
+    --border-color: #242423;
     --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     --transition: all 0.3s ease;
 }
@@ -20,7 +21,7 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background-image: url(../images/minimalist-blue-white-wave-background.jpg);
+    background-image: url(../images/photo-1664179550989-894a1587554b.jpg);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -113,7 +114,7 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: white;
+    background-color: var(--header);
     box-shadow: var(--box-shadow);
     padding: 15px 0;
 }
@@ -228,7 +229,7 @@ nav ul li a.active {
 /* A propos */
 .about {
     padding: 100px 0;
-    background-color: #f3f4f6;
+    background-color: var(--background-color);
 }
 
 .about-content {
@@ -249,7 +250,7 @@ nav ul li a.active {
 
 .about-card {
     flex: 1;
-    background-color: white;
+    background-color: var(--header);
     padding: 30px;
     border-radius: 10px;
     box-shadow: var(--box-shadow);
@@ -318,7 +319,7 @@ nav ul li a.active {
 }
 
 .timeline-content {
-    background-color: white;
+    background-color: var(--background-color);
     padding: 25px;
     border-radius: 10px;
     box-shadow: var(--box-shadow);
@@ -340,14 +341,14 @@ nav ul li a.active {
 /* Formations */
 .education {
     padding: 100px 0;
-    background-color: var(--light-gray);
+    background-color: var(--background-color);
 }
 
 .education-item {
     display: flex;
     max-width: 800px;
     margin: 30px auto;
-    background-color: white;
+    background-color: var(--header);
     padding: 30px;
     border-radius: 10px;
     box-shadow: var(--box-shadow);
@@ -377,7 +378,7 @@ nav ul li a.active {
 }
 
 .skill-card {
-    background-color: white;
+    background-color: var(--background-color);
     padding: 30px;
     border-radius: 10px;
     box-shadow: var(--box-shadow);
@@ -414,7 +415,7 @@ nav ul li a.active {
 .page-header {
     padding: 150px 0 80px;
     text-align: center;
-    background: linear-gradient(to right, #f9fafb, #f3f4f6);
+    background: var(--background-color);
 }
 
 .page-header h1 {
@@ -447,7 +448,7 @@ nav ul li a.active {
     margin: 0 10px 10px;
     border: none;
     background-color: transparent;
-    color: var(--dark-gray);
+    color: var(--light-gray);
     font-weight: 500;
     cursor: pointer;
     transition: var(--transition);
@@ -467,7 +468,7 @@ nav ul li a.active {
 }
 
 .project-card {
-    background-color: white;
+    background-color: var(--background-color);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: var(--box-shadow);
@@ -518,7 +519,7 @@ nav ul li a.active {
 
 .project-tags span {
     padding: 5px 15px;
-    background-color: var(--light-gray);
+    background-color: var(--header);
     border-radius: 20px;
     font-size: 0.8rem;
     font-weight: 500;
@@ -563,9 +564,9 @@ nav ul li a.active {
 }
 
 .cta .btn.primary {
-    background-color: white;
+    background-color: var(--background-color);
     color: var(--primary-color);
-    border-color: white;
+    border-color: var(--background-color);
 }
 
 .cta .btn.primary:hover {
@@ -585,7 +586,7 @@ nav ul li a.active {
 }
 
 .contact-info {
-    background-color: white;
+    background-color: var(--background-color);
     padding: 30px;
     border-radius: 10px;
     box-shadow: var(--box-shadow);
@@ -629,7 +630,8 @@ nav ul li a.active {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: rgb(174, 174, 174);
+    background-color: var(--light-gray);
+    color: #242423;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -638,11 +640,11 @@ nav ul li a.active {
 
 .social-icon:hover {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--background-color);
 }
 
 .contact-form {
-    background-color: white;
+    background-color: var(--background-color);
     padding: 30px;
     border-radius: 10px;
     box-shadow: var(--box-shadow);
@@ -682,7 +684,7 @@ nav ul li a.active {
 
 /* Footer */
 footer {
-    background-color: #1f2937;
+    background-color: var(--header);
     color: white;
     padding: 60px 0 30px;
 }
@@ -736,7 +738,7 @@ footer {
 }
 
 .project-info-detailed {
-    background-color: white;
+    background-color: var(--background-color);
     border-radius: 10px;
     padding: 30px;
     box-shadow: var(--box-shadow);
@@ -763,7 +765,7 @@ footer {
 }
 
 .project-description {
-    background-color: white;
+    background-color: var(--background-color);
     padding: 40px;
     border-radius: 10px;
     box-shadow: var(--box-shadow);
@@ -824,7 +826,7 @@ footer {
 }
 
 .tech-item {
-    background-color: var(--light-gray);
+    background-color: var(--header);
     padding: 25px;
     border-radius: 8px;
     transition: var(--transition);
